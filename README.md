@@ -5,3 +5,5 @@ Arturo Cruz Tovar
 Joel Alberto Del Rincón Rodríguez
 Jesus Antonio Preciado Bravo
 Guillermo Olvera
+
+El proyecto simulara el metodo de E/S Programada
