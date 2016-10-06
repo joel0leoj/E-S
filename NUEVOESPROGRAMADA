@@ -1,0 +1,31 @@
+package simulacion;
+
+import org.omg.Messaging.SyncScopeHelper;
+import java.util.Scanner;
+public class ESprogramada {
+	
+	    /**
+	     * @param args the command line arguments
+	     */
+	 
+	    public static void main(String[] args) 
+	    {
+	    	
+	    	Scanner entrada1 = new Scanner(System.in);
+	    	 int a
+			 a=entrada1.nextInt();
+			  
+
+	          
+		boolean GetImprimir()
+		{
+			return Comunicacion();
+			
+		}
+		
+	    
+	    
+	    
+
+	
+	}
