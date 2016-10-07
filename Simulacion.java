@@ -9,8 +9,7 @@ package simulacion;
  *
  * @author andy
  */
-import org.omg.Messaging.SyncScopeHelper;
-import java.util.Scanner;
+
 
 public class Simulacion {
 
@@ -19,15 +18,10 @@ public class Simulacion {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-    
-        Scanner entrada1 = new Scanner(System.in);
-	    	 int a;
-			 //a=entrada1.nextInt();  //no compila si agregamos esto por ahora
-    
     
 	Ccpu cpu = new Ccpu(false,false);
     cpu.Ordenar();
+    cpu.Transferencia();
 
 	          
 	

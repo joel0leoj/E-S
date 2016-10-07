@@ -13,13 +13,14 @@ import java.util.Scanner;
 
 public class Ccpu extends Ccontrolador{
     
-    Scanner entrada1 = new Scanner(System.in);
-        int a;
+    
+int ord1;
     
 public Ccpu (boolean estado, boolean control) {
-    super(estado, contro);
+    super(estado, control);
     this.estado = estado;
     this.control = control;
+   
                  
     }
 
@@ -33,19 +34,17 @@ public Ccpu (boolean estado, boolean control) {
 			}
 			else
 			{
-				Sytem.out.printl("No se reconoció el dispositivo, verifiquelo");
+				System.out.println("No se reconoció el dispositivo, verifiquelo");
 			}
-			
-			
 		}
 	    
 		public void Ordenar()//opciones de orden en forma de menu
 		{
             System.out.println("Ejecutar orden: \n1.Estado. \n2.Transferencia");
-            a=entrada1.nextInt();
+            ord1=entrada1.nextInt();
             
-            switch (a)        
-		{
+        switch (ord1)        
+        {
 			case 1:
                 Comunicacion();
 				break;
@@ -59,6 +58,7 @@ public Ccpu (boolean estado, boolean control) {
 		}
 		public void Revisar()
 		{
+            
 			
 		}
         
