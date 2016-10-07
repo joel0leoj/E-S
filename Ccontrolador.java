@@ -3,33 +3,44 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package e.s.programada;
+package simulacion;
 
 /**
  *
- * @author leoj_
+ * @author andy
  */
-public class Ccontrolador
-{
-    int estado=1; //1=Preparado  0=NoPreparado
-    Ccpu CPU =new Ccpu();
-    public int estado()
-    {
-        return estado;
-    }
+public class Ccontrolador {
     
-    public void señalesControl()
-    {
-        datos();
-    }
     
-    public void datos()
-    {
-        CPU.lectura();
+	public boolean estado;
+    public boolean contro;
+	
+	public Ccontrolador (boolean estado, boolean contro) {
+        this.estado = estado;        
+        this.contro = contro;          
     }
+	
+		public void Comunicacion()//metodo para revisar estado controlador
+		{
+			estado = true;
+            System.out.println("Se ha establecido la conexion! ");
+            
+		}
+
+		public void Datos()//metodo para hacer lectura/modificar
+		{
+			
+		}
+		
+		public void Transferencia()//lectura/estructura del dispositivo
+		
+		{
+			
+		}
+		
+		public void EstadoFinal()//revisión final del dispositivo
+		{
+			
+		}
     
-    public void cambioestado(int n)
-    {
-        estado=n;
-    }
 }

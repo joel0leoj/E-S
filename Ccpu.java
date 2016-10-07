@@ -3,65 +3,60 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package e.s.programada;
-import java.util.Scanner;
+package simulacion;
+
 /**
  *
- * @author leoj_
+ * @author andy
  */
-public class Ccpu 
-{
-    Ccontrolador contro =new Ccontrolador();
-    int estado=1, n=0, m;
-    String nombre, acum[];
-    public void periferico()
-    {
-        Scanner leer= new Scanner(System.in);
-        nombre=leer.nextLine();
-    }
+import java.util.Scanner;
+
+public class Ccpu extends Ccontrolador{
     
-    public void control()
-    {
-        contro.señalesControl();
-    }
+    Scanner entrada1 = new Scanner(System.in);
+        int a;
     
-    public void lectura()
-    {
-                estado=contro.estado();
-        System.out.println("Estado del controlador: ");
-        if(estado==1)
-        System.out.println("Preparado");  
-        else
-        System.out.println("No Preparado");
+public Ccpu (boolean estado, boolean contro) {
+    super(estado, contro);
+    this.estado = estado;
+    this.contro = contro;
+                 
+    }
+
+    
+    public void VerificarE()//veriicar estado dispositivo
+		{
+			
+		}
+	    
+		public void Ordenar()//opciones de orden en forma de menu
+		{
+            System.out.println("Ejecutar orden: \n1.Estado. \n2.Transferencia");
+            a=entrada1.nextInt();
+            
+            switch (a)        
+		{
+			case 1:
+                Comunicacion();
+				break;
+			case 2:
+				Transferencia();
+				break;
+            default:
+                break;
+        }
+			System.out.println("Esperando comunicacion con el controlador...\n\n");
+		}
+		public void Revisar()
+		{
+			
+		}
         
-        escritura();
-    }
-    
-    public void escritura()
-    {
-        if(estado!=0)
-        {
-        contro.cambioestado(0);
-        programa();
-        }
-        n=n+nombre.length();
-        String[] RegDato= new String[n];
-        RegDato[m]=""+nombre.charAt(m);
-        acum=RegDato;
-        if(m<nombre.length())
-        {
-            control();
-        }
-        else
-        {
-            contro.cambioestado(1);
-            control();
-        }
-    }
-    public void programa()
-    {
-        System.out.println("Escribe tu nombre:");
-        periferico();
-    }
-    
+        public boolean GetImprimir()
+		{
+			
+            return contro;
+			
+		}
+        
 }
