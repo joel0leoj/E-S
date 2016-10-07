@@ -26,6 +26,16 @@ public Ccpu (boolean estado, boolean contro) {
     
     public void VerificarE()//veriicar estado dispositivo
 		{
+			if(estado==true)
+			{
+				System.out.println("El disposito se ha reconocido correctamente");
+				
+			}
+			else
+			{
+				Sytem.out.printl("No se reconoció el dispositivo, verifiquelo");
+			}
+			
 			
 		}
 	    
