@@ -22,8 +22,13 @@ public class Ccontrolador {
 	
 		public void Comunicacion()//metodo para revisar estado controlador
 		{
-			estado = true;
-            System.out.println("Se ha establecido la conexion! ");
+			if(estado==true)
+			{
+				   System.out.println("Se ha establecido la conexion! ");
+			}
+			else
+				   System.out.println("No se pudo establecer comunicacion, intente de nuevo");
+				
             
 		}
 
