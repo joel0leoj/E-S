@@ -27,8 +27,9 @@ public class Ccontrolador {
 				   System.out.println("Se ha establecido la conexion! ");
 			}
 			else
-				   System.out.println("No se pudo establecer comunicacion, intente de nuevo");
-				
+			{	   
+				System.out.println("No se pudo establecer comunicacion, intente de nuevo");
+			}	
             
 		}
 
