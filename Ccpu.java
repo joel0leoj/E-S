@@ -16,10 +16,10 @@ public class Ccpu extends Ccontrolador{
     Scanner entrada1 = new Scanner(System.in);
         int a;
     
-public Ccpu (boolean estado, boolean contro) {
+public Ccpu (boolean estado, boolean control) {
     super(estado, contro);
     this.estado = estado;
-    this.contro = contro;
+    this.control = control;
                  
     }
 
@@ -65,7 +65,7 @@ public Ccpu (boolean estado, boolean contro) {
         public boolean GetImprimir()
 		{
 			
-            return contro;
+            return control;
 			
 		}
         
