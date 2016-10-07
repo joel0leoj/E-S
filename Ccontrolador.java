@@ -4,17 +4,21 @@
  * and open the template in the editor.
  */
 package simulacion;
-
+import java.util.Random;
 /**
  *
  * @author andy
  */
 public class Ccontrolador {
     
+    	//RANDOM DATOS BOOLEANOS 
+	Random randomno = new Random();
     
-	public boolean estado;
-    public boolean contro;
-	
+	   
+	boolean estado=randomno.nextBoolean();
+	 boolean control=randomno.nextBoolean();
+	      
+	  
 	public Ccontrolador (boolean estado, boolean contro) {
         this.estado = estado;        
         this.contro = contro;          
