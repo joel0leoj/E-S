@@ -9,3 +9,5 @@ Guillermo Olvera
 El proyecto simulara el metodo de E/S Programada
 
 Aun en desarrollo...
+
+NO LE HAGAN CASO A LOS ARCHIVOS "NUEVO"
